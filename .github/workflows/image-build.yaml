@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t shameson0708/redis .
+        run: docker build -t shameson0708/redis:${{ github.event.pull_request.head.sha }} .
 
       - name: Push Docker image
-        run: docker push shameson0708/redis
+        run: docker push shameson0708/redis:${{ github.event.pull_request.head.sha }}
