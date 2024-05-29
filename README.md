@@ -1,2 +1,2 @@
 # redisapp
-Dummy redisapp for kargo pipeline test
+Dummy redisapp for kargo pipeline
