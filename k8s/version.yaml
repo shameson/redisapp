@@ -1,0 +1,5 @@
+deployment:
+  image:
+    repository: shameson0708
+    name: redis
+    tag: 'x.x.x'
